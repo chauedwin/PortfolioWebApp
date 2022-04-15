@@ -6,7 +6,6 @@ idna==3.3
 joblib==1.0.1
 lxml==4.8.0
 multitasking==0.0.10
-pmdarima==1.8.2
 pytz==2021.3
 requests==2.27.1
 scikit-learn==0.24.2
