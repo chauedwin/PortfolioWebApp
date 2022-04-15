@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	
+<table border>
+	<tr>
+		
+		<td> weight </td>
+	</tr>
+    {% for row in output %}
+        <tr>
+			<td>{{ row }}</td>
+        </tr>
+    {% endfor %}
+	</table>
+
+<!--	
+    <h1>{% block title %} {{ data[0] }} {% endblock %}</h1>
+	<table border>
+	<tr>
+		<td> Date </td>
+		<td> ticker </td>
+		<td> Close </td>
+		<td> High </td>
+		<td> Low </td>
+		<td> Open </td>
+		<td> Volume </td>
+    {% for row in data[1] %}
+        <tr>
+            <td>{{ row['Date'] }}</td>
+			<td>{{ row['ticker']}}</td>
+			<td>{{ row['Close']}}</td>
+			<td>{{ row['High']}}</td>
+			<td>{{ row['Low']}}</td>
+			<td>{{ row['Open']}}</td>
+			<td>{{ row['Volume']}}</td>
+        </tr>
+    {% endfor %}
+	</table>
+-->
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	
+    <h1>{% block title %} Stock Data {% endblock %}</h1>
+	<table border>
+	<tr>
+		<td> Date </td>
+		<td> ticker </td>
+		<td> Close </td>
+		<td> High </td>
+		<td> Low </td>
+		<td> Open </td>
+		<td> Volume </td>
+    {% for stock in stocks %}
+        <tr>
+            <td>{{ stock['Date'] }}</td>
+			<td>{{ stock['ticker']}}</td>
+			<td>{{ stock['Close']}}</td>
+			<td>{{ stock['High']}}</td>
+			<td>{{ stock['Low']}}</td>
+			<td>{{ stock['Open']}}</td>
+			<td>{{ stock['Volume']}}</td>
+        </tr>
+    {% endfor %}
+	</table>
+
+{% endblock %}
