@@ -5,6 +5,7 @@ click @ file:///C:/ci/click_1646038595831/work
 colorama @ file:///tmp/build/80754af9/colorama_1607707115595/work
 Cython==0.29.24
 Flask @ file:///tmp/build/80754af9/flask_1634118196080/work
+gunicorn==20.0.4
 idna==3.3
 itsdangerous @ file:///tmp/build/80754af9/itsdangerous_1621432558163/work
 Jinja2 @ file:///tmp/build/80754af9/jinja2_1635780242639/work
