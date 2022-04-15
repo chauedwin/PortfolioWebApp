@@ -13,3 +13,5 @@ threadpoolctl==2.2.0
 urllib3==1.26.6
 wincertstore==0.2
 yfinance==0.1.70
+Flask==2.0.3
+Werkzeug==2.0.3
