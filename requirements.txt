@@ -1,6 +1,5 @@
 certifi==2021.10.8
 charset-normalizer==2.0.12
-click @ file:///C:/ci/click_1646038595831/work
 colorama @ file:///tmp/build/80754af9/colorama_1607707115595/work
 Cython==0.29.24
 Flask @ file:///tmp/build/80754af9/flask_1634118196080/work
