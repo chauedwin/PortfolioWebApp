@@ -89,7 +89,7 @@ def cut(sim_params, mktreturn):
 @app.route('/')
 def index():
     conn = get_db_connection()
-    stocks = conn.execute('SELECT * FROM stocks WHERE Date = DATE(\'now\') ORDER BY ticker LIMIT 500').fetchall()
+    stocks = conn.execute('SELECT * FROM stocks ORDER BY Date, ticker, Volume LIMIT 1000').fetchall()
     conn.close()
     
     return render_template('index.html', stocks=stocks)        
